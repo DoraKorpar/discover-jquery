@@ -61,13 +61,13 @@
   <!-- two classes make page for difference-sized screens how client wants -->
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
@@ -75,7 +75,7 @@
     <div class="clearfix visible-sm"></div>
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>        
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
@@ -83,7 +83,7 @@
     <div class="clearfix visible-md visible-lg"></div>
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
@@ -91,13 +91,13 @@
     <div class="clearfix visible-sm"></div>
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
     <div class="col-sm-6 col-md-4">
       <h3>Heading</h3>        
-      <input class="rating-loading rating-alert" >
+      <input class="rating-loading alert" >
       <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
       <button type="button" class="btn btn-default">View details &raquo</button>
     </div>
@@ -148,8 +148,8 @@
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover();   
     $('.rating-loading').rating({min:0, max:3, step:0.5, size:'sm', stars:'3'});
-    $(".rating-loading").on('rating.change', function(event, value, caption) {
-      window.alert("New value is: "+value);
+    $(".alert").on('rating.change', function(event, value, caption) {
+      window.alert("New value is " + value);
   });
 });
 </script>
