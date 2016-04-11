@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="kartik-v-bootstrap-star-rating-2443b49/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="kartik-v-bootstrap-star-rating-2443b49/js/star-rating.js" type="text/javascript"></script>
+  <title>Bootstrap Example</title>
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+<!-- navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Acme, inc.</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li> 
+        <!-- dropdown in in fourth navbar button -->
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Financial services</a></li>
+            <li><a href="#">Real estate</a></li>
+            <li><a href="#">Insurances</a></li>
+            <!-- class divider adds line to separate two objects -->
+            <li class="divider"></li>
+            <li><a href="#">Pharmaceuticals</a></li> 
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">John Doe</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Innovation at its core</h1>
+    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+    <!-- what will appear when button is moused over -->
+    <a href="#" title="What's behind that link" data-toggle="popover" data-trigger="hover" data-content="Tons of information about Acme's products and services. Click now, you won't be disappointed!"><button type="button" class="btn btn-primary btn-lg">Learn more about Acme, inc. &raquo</button></a>
+  </div>
+  <!-- everything in one row to allow fluid column movements on resizing of page -->
+  <div class="row">
+  <!-- two classes make page for difference-sized screens how client wants -->
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+    <!-- makes page flow correctly even if objects in line aren't same size in first row of small screen -->
+    <div class="clearfix visible-sm"></div>
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>        
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+    <!-- makes page flow correctly in first row of md and lg screens -->
+    <div class="clearfix visible-md visible-lg"></div>
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+    <!-- makes page flow correctly in second and third row of small screens -->
+    <div class="clearfix visible-sm"></div>
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <h3>Heading</h3>        
+      <input class="rating-loading rating-alert" >
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+      <button type="button" class="btn btn-default">View details &raquo</button>
+    </div>
+  </div>
+  <!-- FAQ accordion -->
+  <h2>FAQ</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Question #1</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf mood officia aute, non cupidatat sakteboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciuntsapiente ea proident. Ad vegan excepteur butcher</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Question #2</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf mood officia aute, non cupidatat sakteboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciuntsapiente ea proident. Ad vegan excepteur butcher</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Question #3</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf mood officia aute, non cupidatat sakteboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciuntsapiente ea proident. Ad vegan excepteur butcher</div>
+      </div>
+    </div>
+  </div>
+  <!-- footer with break -->
+  <hr>
+  <footer>
+    <p>&copy 2016 Acme, Inc.</p>
+  </footer>
+</div>
+
+<!-- =========== Javascript for mouse over popup on jumbotron button and star rating -->
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+    $('.rating-loading').rating({min:0, max:3, step:0.5, size:'sm', stars:'3'});
+    $(".rating-loading").on('rating.change', function(event, value, caption) {
+      window.alert("New value is: "+value);
+  });
+});
+</script>
+
+</body>
+</html>
